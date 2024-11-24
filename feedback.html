@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+    
+    <title>Feedback Page-FoodCook Planner</title>
+    
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body >
+
+
+    <header >FoodCook Planner
+
+        <a href="./index.html"  style="padding: 5px 7px; font-size:15px; user-select: none;  color:rgb(207, 207, 207)" >Back</a>
+    </header>
+    
+  <main>
+    <h4>Feedback Form</h4>
+
+    <style>
+        form {
+            margin-top: 20px;
+            background-color: #FFF;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        form * {
+            margin: 5px;
+            width: 100%;
+        }
+
+        form input,
+        textarea {
+            padding: 5px 10px;
+            font-size: 10px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 5px 10px;
+            background-color: royalblue;
+            border: none;
+            color: #FFF;
+            border-radius: 5px
+        }
+
+        form label {
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            color: gray;
+            user-select: none;
+        }
+
+        form label input,
+        form input[type='radio'] {
+            width: auto;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+    </style>
+
+    <form name="feedback">
+    <div class="fullname">
+        <input type="text" name="fullname" placeholder="Enter Your FullName">
+        </div>
+        <div  class="d-flex">
+        <div class="d-flex">
+            <input type="radio" name="type" id="general-feedback" value="general-feedback">
+            <label for="general-feedback">General Feedback</label>
+        </div>
+
+        <div class="d-flex">
+            <input type="radio" name="type" id="technical-support" value="technical-support">
+            <label for="technical-support">Technical Support</label>
+        </div>
+
+        <div class="d-flex">
+            <input type="radio" name="type" id="contribution" value="contribution">
+            <label for="contribution">Contributions</label>
+        </div>
+        </div>
+        
+        <div>
+            <input type="email" name="email" placeholder="you@gmail.com">
+        </div>
+
+        <div>
+            <textarea name="description" placeholder="Enter Your Feedback Briefly!" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="terms">
+                <input type="checkbox" name="terms" id="">I accept Terms and Conditions
+            </label>            
+        </div>
+
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <!-- Dummy form -->
+     <form action="
+     "></form>
+
+  </main>         
+    
+    
+  
+    <script src="./assets/learning.js"></script>
+</body>
+</html>
+

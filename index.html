@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    </style>
+    
+    <title>JS DOM Tamil</title>
+    
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+
+<body >
+
+
+    <header >FoodCook Planner
+
+        <a href="./about.html"  style="padding: 5px 7px; font-size:15px; user-select: none; border:1px solid white; background-color:white; color:black" >Credits</a>
+        <a href="./feedback.html"  style="padding: 5px 7px; font-size:15px; user-select: none; color:rgb(207, 207, 207)" >Feedback</a>
+
+    </header>
+    
+    <main id="main"><!-- some -->      
+        <div class="input-container"  name="input-food-name" id="input-container">
+            <input type="text" placeholder="I like to eat..." class="input-food" id="input-food">
+            <button class="input-btn" id="input-btn">Save</button> <!-- Updated the class -->
+        </div>
+        
+
+        <ul class="food-container" id="food-container">
+            <li class="food-item">
+                <div >Sambar</div>
+                <div onclick="removeItem(event)"><i class="fa fa-xmark" aria-hidden="true"></i></div>
+            </li>
+            <li class="food-item">
+                <div >Rasam</div>
+                <div onclick="removeItem(event)"><i class="fa fa-xmark" aria-hidden="true"></i></div>
+            </li>
+            <li class="food-item ">
+                <div >curd</div>
+                <div onclick="removeItem(event)"><i class="fa fa-xmark" aria-hidden="true"></i></div>
+            </li>
+                    
+        </ul>
+        <!-- event bubbling aNd capturing -->
+         
+
+       
+        
+    
+    </main>
+                    
+    
+    
+    <script src="./assets/learning.js"></script>
+    <script src="./assets/mains.js"></script>
+</body>
+</html>
+
